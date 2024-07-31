@@ -273,6 +273,10 @@ header nav ul li::after{
 }
 
 /* Services */
+.services .right{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+}
 .services .right .card
 {
     padding: 50px 20px;
@@ -458,6 +462,9 @@ footer
         border-radius: 0;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+    }
+    .services .right{
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     }
 }
 
