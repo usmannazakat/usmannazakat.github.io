@@ -334,7 +334,7 @@ header nav ul li::after{
 footer
 {
     padding: 20px 0;
-    color: #aaaaaa;
+    color: rgba(24, 170, 170);
     text-align: center;
     font-size: 1.2rem;
 }
