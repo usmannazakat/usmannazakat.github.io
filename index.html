@@ -24,7 +24,8 @@
 
     <!-- profile -->
     <div class="profile">
-        <div class="left">
+        <div class="image"><img src="images/Usman-img2.png" alt=""></div>
+        <div class="text">
             <p>it's me <span>Usman Nazakat</span></p>
             <h3>I am a Frontend Developer</h3>
             <div class="social-links">
@@ -33,7 +34,6 @@
                 <li><a href="https://www.instagram.com/osman_nazakat?igsh=MWQycG01a3JvMzQ5Yw==" style="color: rgb(230, 35, 68);" class="fa fa-instagram"></a></li>
             </div>
         </div>
-        <div class="image"><img src="images/Usman-img1.png" alt=""></div>
     </div>
 
     <!-- about -->
@@ -63,19 +63,21 @@
 
 
     <!-- Services -->
-    <div class="services">
-        <div class="left">
-            <h4>My Services</h4>
-        </div>
-        <div class="right">
+    <div class="services-sec">
+        <h4>My Services</h4>
+        <div class="services">
             <div class="card">
                 <h5>Frontend Development</h5>
-                <p>I develop responsive and visually appealing websites. My code is clean, maintainable, and optimized for performance.</p>
+                <p>I create dynamic and interactive web experiences by leveraging modern technologies such as HTML, CSS, and JavaScript. My approach focuses on building robust, scalable, and high-performance websites that deliver exceptional functionality and visual appeal.</p>
             </div>
             <div class="card">
                 <h5>UI/UX Design</h5>
-                <p>I design user interfaces that are both beautiful and user-friendly. My designs are focused on providing an excellent user experience.</p>
+                <p>I design user interfaces that are both aesthetically pleasing and highly functional. My designs emphasize creating intuitive, user-friendly interactions and enhancing the overall user experience to meet the needs of your target audience.</p>
             </div>
+            <div class="card">
+                <h5>Responsive Design</h5>
+                <p>I specialize in ensuring that websites are fully optimized for various devices and screen sizes. By employing responsive design techniques, I create adaptive layouts that provide a consistent and engaging user experience across desktops, tablets, and smartphones.</p>
+            </div>            
         </div>
     </div>
 
@@ -83,16 +85,29 @@
     <!-- Projects -->
     <div class="projects-sec">
         <h4>My Projects</h4>
+
         <div class="projects">
             <div class="project">
                 <div class="img">
-                    <img src="images/projects/serviip.png" alt="">
+                    <img src="images/projects/shopease.png" alt="">
                 </div>
                 <div class="detail">
-                    <p class="name">Serviip</p> 
-                    <p class="text">Service Provider Platform built with HTML, CSS, Javascript, and PHP. Features responsive design for seamless user experience.</p>
+                    <p class="name">E-commerce Website</p> 
+                    <p class="text">Online shopping platform developed with HTML, CSS and Javascript. Includes a responsive design for optimal user experience.</p>
                     <div class="btn">
-                        <a href="">View project</a>
+                        <a href="https://usmannazakat.github.io/shopease.github.io/">View project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="img">
+                    <img src="images/projects/codeEditor.png" alt="">
+                </div>
+                <div class="detail">
+                    <p class="name">Code Editor</p> 
+                    <p class="text">A sleek, web-based code editor for HTML, CSS, and JavaScript that offers real-time preview and intuitive syntax highlighting.</p>
+                    <div class="btn">
+                        <a href="https://usmannazakat.github.io/codeEditor.github.io/">View project</a>
                     </div>
                 </div>
             </div>
@@ -122,28 +137,17 @@
             </div>
             <div class="project">
                 <div class="img">
-                    <img src="images/projects/shopease.png" alt="">
+                    <img src="images/projects/serviip.png" alt="">
                 </div>
                 <div class="detail">
-                    <p class="name">E-commerce Website</p> 
-                    <p class="text">Online shopping platform developed with HTML, CSS and Javascript. Includes a responsive design for optimal user experience.</p>
+                    <p class="name">Serviip</p> 
+                    <p class="text">Service Provider Platform built with HTML, CSS, Javascript, and PHP. Features responsive design for seamless user experience.</p>
                     <div class="btn">
-                        <a href="https://usmannazakat.github.io/shopease.github.io/">View project</a>
+                        <a href="">View project</a>
                     </div>
                 </div>
             </div>
-             <div class="project">
-                <div class="img">
-                    <img src="images/projects/codeEditor.png" alt="">
-                </div>
-                <div class="detail">
-                    <p class="name">Code Editor</p> 
-                    <p class="text">A sleek, web-based code editor for HTML, CSS, and JavaScript that offers real-time preview and intuitive syntax highlighting.</p>
-                    <div class="btn">
-                        <a href="https://usmannazakat.github.io/codeEditor.github.io/">View project</a>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 
@@ -157,11 +161,11 @@
                 <p class="adress"><span>Address: </span>Hassan Abdal, Attock</p>
             </div>
             <div class="right">
-                <form action="">
-                    <input type="text" placeholder="Name">
-                    <input type="text" name="" id="" placeholder="Email">
-                    <textarea name="" id="" placeholder="Message"></textarea>
-                    <button>Submit</button>
+                <form action="" id="contact-form">
+                    <input type="text" placeholder="Name" name="name" id="name">
+                    <input type="text" name="" id="" placeholder="Email" name="email" id="email">
+                    <textarea name="" id="" placeholder="Message" id="message"></textarea>
+                    <button  type="submit">Send</button>
                 </form>
             </div>
         </div>
@@ -169,10 +173,12 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; Copyright Usman Nazakat 2024.</p>
+        <p>&copy; Copyright Usman Nazakat <script>document.write(new Date().getFullYear());</script>.</p>
     </footer>
 
+    <script src="https://https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="script.js"></script>
 
+    
 </body>
 </html>
