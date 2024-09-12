@@ -118,6 +118,9 @@ header nav ul li:hover{
 .profile span{
     color: rgb(24, 170, 170);
     font-size: 2.2rem;
+    padding: 2px;
+    width: max-content;
+    border-right:4px solid rgb(24, 170, 170);
 }
 .profile .text h3{
     font-size: 2.5rem;
