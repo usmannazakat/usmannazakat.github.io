@@ -412,7 +412,7 @@ footer
         border-top-right-radius: 10px;
     }
     .services{
-        grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+        grid-template-columns: 60%;
     }
 }
 
