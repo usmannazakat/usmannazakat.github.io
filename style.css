@@ -24,28 +24,28 @@ h4::after{
     left: 0;
     bottom: 0;
 }
-.profile,.about, .services
+.about
 {
     display: grid;
-    grid-template-columns: 50% 50%;
     padding: 10px 0;
     justify-content: center;
+    margin-top: 40px !important;
+
 }
-.education, .about, .services{
+.education, .about{
    grid-template-columns: 40% 60%; 
 }
-header, .profile
+header
 {
     align-items: center;
 }
-.about .left h4, .education .left h4, .services .left h4{
+.about .left h4, .education .left h4, .services-sec h4{
 
     font-size: 2.4rem;
     color: rgb(58, 58, 58);
     margin-top: 30px;
 }
-
-.profile,.about,.projects-sec,.projects, .services, .contact-sec
+.about,.projects-sec,.projects, .services-sec, .contact-sec
 {
     margin: 0px;
     padding: 20px 30px;
@@ -56,7 +56,11 @@ header{
     display: grid;
     grid-template-columns: 40% 60%;
     padding:20px;
-    border-bottom: 2px solid rgb(179, 179, 179);
+    border-bottom: 1px solid rgb(179, 179, 179);
+    background-color: #e9e9e9;
+}
+.profile{
+    background:linear-gradient(to top, #f5f5f5, #e9e9e9);
 }
 header .name
 {
@@ -68,7 +72,7 @@ header .nav-hide-btn, header .nav-show-btn
     width: auto;
     height: max-content;
     border: 2px solid rgb(24, 170, 170);
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     background-color: transparent;
     color: rgb(24, 170, 170);
     display: none;
@@ -96,30 +100,42 @@ header nav ul li::after{
     left: 0px;
     bottom: 0;
 }
+header nav ul li:hover{
+    color: rgb(18, 109, 109);
+    transition: 0.2s;
+}
 /* profile */
 
-.profile .left
-{
-    font-size: 1.8rem;
-    line-height: 50px;
-    margin-left: 20px;
+.profile{
+    padding: 20px 50px;
+    text-align: center;
 }
-.profile .left span{
+.profile .text p{
+    font-size: 2.2rem;
+    padding: 10px 0;
+}
+
+.profile span{
     color: rgb(24, 170, 170);
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
-.profile .left .social-links
+.profile .text h3{
+    font-size: 2.5rem;
+    color: rgb(66, 66, 66);
+}
+.profile .social-links
 {
-    display: grid;
-    grid-template-columns: 20% 20% 20%;
-    column-gap: 20px;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
 }
 .social-links li a
 {
-    padding: 10px;
+    padding: 15px;
     border: 1px solid rgb(24, 170, 170);
     border-radius: 10px;
+    font-size: 1.2rem;
 }
 .social-links li a:hover{
     box-shadow: 0 2px 5px 0 rgb(24, 170, 170);
@@ -128,8 +144,9 @@ header nav ul li::after{
 .profile .image
 {
     aspect-ratio: 1/1;
-    width: 90%;
-    height: 90%;
+    width: 320px;
+    height:320px;
+    margin: 20px auto;
 }
 .profile .image img
 {
@@ -137,6 +154,9 @@ header nav ul li::after{
     height: 100%;
     object-position: center;
     object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgb(24, 170, 170);
+    background-color: rgb(247, 247, 247);
 }
 /* skills */
 .skills ul
@@ -264,6 +284,7 @@ header nav ul li::after{
     position: absolute;
     bottom: 20px;
     right: 20px;
+    color: rgb(44, 150, 158);
 }
 .projects .project .detail .btn a:hover
 {
@@ -273,22 +294,27 @@ header nav ul li::after{
 }
 
 /* Services */
-.services .right{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+.services-sec{
+    margin: 50px 0;
 }
-.services .right .card
+.services{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(40%, 1fr)); */
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+}
+.services .card
 {
-    padding: 50px 20px;
+    padding: 70px 20px;
     text-align: center;
     box-shadow: 0 2px 5px 0 rgb(24, 170, 170);
     border-radius: 20px;
     margin: 20px 10px;
 }
-.services .right .card h5{
+.services .card h5{
     font-size: 1.4rem;
 }
-.services .right .card p{
+.services .card p{
     margin-top: 10px;
     font-size: 1.1rem;
 }
@@ -300,18 +326,20 @@ header nav ul li::after{
 .contact{
     display: grid;
     grid-template-columns: 50% 50%;
+    background-color: rgb(0, 0, 0);
+    padding: 40px 20px;
+    border-radius: 20px;
 }
 .contact .left
 {
     line-height: 40px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: rgb(90, 90, 90);
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
     margin-bottom: 20px;
 }
 .contact .left span{
-    color: rgb(54, 54, 54);
-    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
     font-weight: bold;
 }
 .contact .left p
@@ -321,7 +349,7 @@ header nav ul li::after{
 }
 .contact .left p::after{
     content: '';
-    background: rgb(201, 201, 201);
+    background: rgb(233, 233, 233);
     height: 2px;
     width: 80%;
     position: absolute;
@@ -330,18 +358,18 @@ header nav ul li::after{
 }
 .contact .right form
 {
-    width: 80%;
+    width: 90%;
 }
 .contact form input, .contact form textarea{
     width: 100%;
-    margin: 10px 0;
+    margin: 10px auto;
     padding: 15px;
-    border: 2px solid rgb(161, 161, 161);
+    border: 3px solid rgb(161, 161, 161);
     outline: none;
     font-size: 1.1rem;
 }
 .contact form input:focus, .contact form textarea:focus, .contact form button:hover{
-    border: 2px solid rgb(24, 170, 170);
+    border: 3px solid rgb(24, 170, 170);
     transition: 0.2s;
 }
 .contact form textarea{
@@ -349,12 +377,14 @@ header nav ul li::after{
     resize: none;
 }
 .contact form button{
-    padding: 10px 20px;
-    border: 2px solid rgb(161, 161, 161);
+    padding: 10px 30px;
+    border: 3px solid rgb(161, 161, 161);
     background-color: transparent;
     cursor: pointer;
     column-rule-color: rgb(161, 161, 161);
     font-size: 1.2rem;
+    color: white;
+    border-radius: 10px;
 }
 
 /* Footer */
@@ -381,6 +411,9 @@ footer
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
+    .services{
+        grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    }
 }
 
 
@@ -391,15 +424,15 @@ footer
     }       
     .profile .left,     .about .right
     {
-        margin-top: 30px;
+        margin-top: 40px;
         margin-left: 0px;
     }
-    .projects, .services .right
+    .projects, .services
     {
         margin-top: 25px;
     }
     form{
-        margin-top: 20px 0;
+        margin-top: 20px;
     }
     .contact .left p::after{
         width: 100%;
@@ -464,7 +497,7 @@ footer
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
-    .services .right{
+    .services{
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     }
 }
@@ -477,11 +510,14 @@ footer
     {
         width: 100%;
         padding: 30px 0;
-        border-radius: 20px;
     }
     .contact .right form input, .contact .right form textarea{
-        width: 85%;
+        width: 90%;
         margin: 10px 2%;
+        padding: 10px;
+        font-size: 0.9rem;        
+        border: 1px;
+        border-radius: 5px;
     }
     .contact .right form button{
         margin-left: 2%;
@@ -489,23 +525,33 @@ footer
     .contact-sec h4{
         margin-left: 0%;
     }
-    .contact span{
-        font-size: 1.3rem !important;
-    }
     .contact .left
     {
         line-height: 40px;
-        font-size: 1rem;
-        font-weight: bold;
-        color: rgb(90, 90, 90);
+        font-size: 0.9rem;
+        color: rgb(255, 255, 255);
         margin-bottom: 20px;
+    }
+    .contact .left span{
+        font-size: 1rem;
     }
     .profile .image
     {
-        width: 100%;
-        height:100%;
+        width: 80%;
+        height:80%;
         margin-top: 20px;
         padding: 0%;
+    }
+    .profile .text p{
+        font-size:1.8rem;
+        padding: 20px 0;
+    }
+    .profile span{
+        font-size: 1.8rem;
+    }
+    .profile .text h3{
+        font-size: 2rem;
+        color: rgb(66, 66, 66);
     }
 
 }
