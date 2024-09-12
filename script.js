@@ -37,3 +37,16 @@ function showContact()
     contacts.scrollIntoView();
     closeNav();
 }
+
+let nameDiv = document.querySelector('.my-name');
+let myName = 'Usman Nazakat';
+let index = 0;
+
+let interval = setInterval(() => {
+    nameDiv.innerHTML += myName[index];
+    index++;
+    if (index > myName.length) {
+        nameDiv.innerHTML = '';
+        index = 0;
+    }
+}, 500);
