@@ -1,0 +1,606 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h4{
+    position: relative;
+    padding: 10px 0;
+}
+h4::after{
+    content: '';
+    background: rgb(24, 170, 170);
+    width: 90px;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.about
+{
+    display: grid;
+    padding: 10px 0;
+    justify-content: center;
+    margin-top: 40px !important;
+
+}
+.education, .about{
+   grid-template-columns: 40% 60%; 
+}
+header
+{
+    align-items: center;
+}
+.about .left h4, .education .left h4, .services-sec h4{
+
+    font-size: 2.4rem;
+    color: rgb(58, 58, 58);
+    margin-top: 30px;
+    width: max-content;
+}
+.services-sec h4{
+    text-align: center;
+    margin: auto;
+}
+.about,.projects-sec,.projects, .services-sec, .contact-sec
+{
+    margin: 0px;
+    padding: 20px 30px;
+}
+
+/* Header */
+header{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding:20px;
+    background-color: rgba(202, 255, 226, 0.466);
+    position: sticky;
+    top: 0%;
+    z-index: 10 !important;
+    justify-content: space-between;
+}
+.profile{
+    background:linear-gradient(to top, #f5f5f5, rgba(202, 255, 226, 0.466));
+}
+header .name
+{
+    font-size: 1.6rem;
+}
+header .nav-hide-btn, header .nav-show-btn
+{
+    padding: 10px;
+    width: auto;
+    height: max-content;
+    border: 2px solid rgb(24, 170, 170);
+    font-size: 1.3rem;
+    background-color: transparent;
+    color: rgb(24, 170, 170);
+    display: none;
+    cursor: pointer;
+}
+
+header nav ul
+{
+    display: flex;
+    justify-content:space-around;
+}
+header nav ul li
+{
+ font-size: 1.1rem;   
+ cursor: pointer;
+ position: relative;
+ padding-bottom: 5px;
+}
+header nav ul li::after{
+    content: '';
+    background: rgb(24, 170, 170);
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+}
+header nav ul li:hover{
+    color: rgb(18, 109, 109);
+    transition: 0.2s;
+}
+.scrolled{
+    border-radius: 20px;
+    margin: 10px;
+    transition: 0.3s;
+    top: 10px;
+    border: none;
+    box-shadow: 0 2px 5px 0px #dbdbdb;
+    background: linear-gradient(to top, rgb(143, 169, 255), rgb(173, 255, 248));
+}
+/* profile */
+
+.profile{
+    padding: 20px 50px;
+    text-align: center;
+}
+.profile .text p{
+    font-size: 2.3rem;
+    padding: 10px 0;
+}
+
+.profile span{
+    color: rgb(24, 170, 170);
+    font-size: 2.3rem;
+    padding: 2px;
+    width: max-content;
+    border-right:4px solid rgb(24, 170, 170);
+}
+.profile .text h3{
+    font-size: 2.8rem;
+    color: rgb(66, 66, 66);
+}
+.profile .social-links
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.social-links li a
+{
+    padding: 15px;
+    border: 1px solid rgb(24, 170, 170);
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+.social-links li a:hover{
+    box-shadow: 0 2px 5px 0 rgb(24, 170, 170);
+    transition: 0.2s;
+}
+.profile .image
+{
+    aspect-ratio: 1/1;
+    width: 300px;
+    height:300px;
+    margin: 20px auto;
+}
+.profile .image img
+{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgb(24, 170, 170);
+    background-color: rgb(247, 247, 247);
+}
+/* skills */
+
+.skills li{
+    border: 2px solid rgb(24, 170, 170);
+    color: rgb(24, 170, 170);
+    border-radius: 10px;
+    width: max-content;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    margin-left: 0%;
+}
+.skills li:hover
+{
+    box-shadow: 0 1px 3px 0 rgb(24, 170, 170);
+    transition: 0.3s;
+}
+
+/* education */
+.education{
+    line-height: 35px;
+}
+.education .degree{
+    font-size: 1.4rem;
+}
+.education .university
+{
+    font-size: 1.3rem;
+}
+.education .university span{
+    font-size: 1.1rem;
+}
+.education .date{
+    color: blue;
+    font-size: 1.1rem;
+}
+
+/* About */
+
+.about .right h4
+{
+    font-size: 1.8rem;
+}
+.about .right h4::after{
+    background: transparent;
+}
+.about .right p
+{
+    padding: 10px 0;
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+.about .right h5{
+    font-size: 1.5rem;
+    margin: 10px 0 20px 0;
+}
+
+
+/* Projects */
+.projects-sec h4,.contact-sec h4{
+    font-size: 2.3rem;
+    margin: 50px 0;
+    margin-left: 30px;
+    color: rgb(58, 58, 58);
+    margin-left: 0;
+}
+
+.projects-sec{
+    background: rgba(24, 170, 170, 0.822);
+}
+.projects-sec h4{
+    color: white;
+}
+.projects-sec h4::after{
+    background: white;
+}
+.projects-sec .projects{
+    position: relative;
+}
+.projects-sec .projects::before{
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    bottom: 0;
+    width: 8px;
+    background: linear-gradient(to bottom, rgb(56, 178, 187), rgb(141, 251, 255), white);
+    border-radius: 20%;
+}
+.projects-sec .projects .project{
+    display: grid;
+    grid-template-columns: 35% 40%;
+    justify-content: space-around;
+    border-radius: 10px;
+    column-gap: 20px;
+    position: relative;
+    align-items: flex-start;
+    margin: 40px 0;
+}
+.projects-sec .projects .project::after{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to right, rgb(24, 28, 255), rgb(179, 64, 255));
+    border-radius: 100px;
+}
+.projects .project .img{
+    width: 100%;
+    height: 100%;
+}
+
+.projects .project .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px 2px #dbdbdb;
+}
+.projects .project .detail{
+    position: sticky !important;
+    top: 130px !important;
+    background-color: rgba(255, 255, 255, 0.493);
+    padding: 20px;
+    border-radius: 10px;
+}
+.projects .project .detail:hover{
+    box-shadow: 0 2px 2px 2px rgb(201, 201, 201);
+}
+
+.projects .project .detail  p
+{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    line-height: 25px;
+}
+.projects .project .detail .name{
+    font-size: 1.4rem;
+}
+.projects .project .detail .btn
+{
+    margin: 10px 0;
+}
+.projects .project .detail .btn a
+{
+    padding: 10px;
+    border: 2px solid rgb(44, 158, 72);
+    border-radius: 10px;
+    color: rgb(0, 112, 216);
+}
+.projects .project .detail .btn a:hover::after{
+    content: ' ➜';
+    transition: 0.2s;
+}
+.projects .project .detail .btn a:hover
+{
+    background: linear-gradient(to right, rgb(110, 160, 253), rgb(129, 215, 255));
+    color: white;
+    transition: 0.3s;
+}
+
+/* Services */
+.services-sec{
+    margin: 50px 0;
+    background-color: rgba(251, 202, 255, 0.466);
+    margin-bottom: 0;
+    padding: 50px 0;
+}
+.services{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(40%, 1fr)); */
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+}
+.services .card
+{
+    padding: 70px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgb(24, 170, 170);
+    border-radius: 20px;
+    margin: 20px 10px;
+    background: rgba(207, 249, 255, 0.603);
+}
+.services .card:hover{
+    background: linear-gradient(to top right, rgb(118, 162, 255), rgb(232, 139, 255));
+    transform: translateY(-10px);
+    transition: 0.2s;
+}
+.services .card h5{
+    font-size: 1.4rem;
+}
+.services .card p{
+    margin-top: 10px;
+    font-size: 1.1rem;
+    line-height: 25px;
+}
+
+/* contact-sec */
+
+.contact-sec h4{
+    text-align: center;
+    font-size: 3.2rem;
+    width:max-content;
+    margin: 50px auto !important;
+    margin-bottom: 10px !important;
+}
+.contact-sec h4::after{
+    background: linear-gradient(to right, blueviolet, rgb(44, 178, 255)) ;
+}
+.contact-sec{
+    padding-bottom: 50px;
+    background-color: rgba(202, 255, 226, 0.466);
+}
+.contact{
+    padding:20px 0 !important;
+}
+.contact-sec p
+{
+    padding: 20px;
+    font-size: 1.3rem;
+    color: #424242;
+    font-weight: 500;
+    text-align: center;
+}
+.contact{
+    display: grid;
+    justify-content: center;
+    background: linear-gradient(to right, blueviolet, rgb(44, 178, 255)) ;
+    width: max-content;
+    margin: 0 auto !important;
+    height: max-content;
+    padding: 0 10px !important;
+    border-radius: 45px;
+}
+.contact button{
+    padding: 15px 30px;
+    width: max-content;
+    margin: 10px auto !important;
+    text-align: center;
+    font-size: 1.3rem;
+    color: black;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 545;
+}
+.contact button:hover{
+    background: linear-gradient(to right, blueviolet, rgb(44, 178, 255)) ;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Footer */
+footer
+{
+    padding: 20px 0;
+    color: #aaaaaa;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 1024px){
+    .projects .project .img img{
+        border-radius: 0;
+    }
+    .services{
+        grid-template-columns: 60%;
+    }
+    .projects-sec .projects .project{
+        grid-template-columns: 45% 40%;
+    }
+}
+
+
+@media (max-width: 760px){
+    .profile, .education, .about, .services, .contact
+    {
+        grid-template-columns: 100%;
+    }       
+    .profile .left,     .about .right
+    {
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    .projects, .services
+    {
+        margin-top: 25px;
+    }
+    .contact .left p::after{
+        width: 100%;
+    }
+    body{
+        padding: 0 ;
+    }
+    .projects-sec .projects .project{
+        grid-template-columns: 100%;
+    }
+    .projects .project .detail{
+        position: static !important;
+        top: 130px !important;
+        background-color: rgba(255, 255, 255, 0.493);
+        padding: 20px;
+        border-radius: 10px;
+    }
+}
+
+
+@media (max-width:640px)
+{
+    header{
+        grid-template-columns: 70% 30%;
+    }
+    header .nav-show-btn{
+        display: block;
+        width: 50px;
+        margin-left: auto;
+    }
+    header .nav-hide-btn
+    {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    header nav{
+        width: 80%;
+        position: fixed;
+        right: -100%;
+        bottom: 0%;
+        top: 0%;
+        background-color: white;
+        transition: 0.2s;
+    }
+    header nav ul
+    {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 70px;
+    }
+    header nav ul li
+    {
+        font-size: 1.5rem;
+        margin: 20px 0;
+        padding: 10px;
+    }
+    header nav ul li::after{
+        left: 10px;
+    }
+    .projects-sec .projects{
+        grid-template-columns: 100%;
+        padding: 20px 10px;
+    }
+    .projects-sec .projects .project .detail .btn a{
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    .projects .project .img img{
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .services{
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+}
+
+@media (max-width: 520px){
+    .contact{
+        margin: 0;
+    }
+    .contact-sec h4{
+        margin-left: 0%;
+    }
+    .contact .left
+    {
+        line-height: 40px;
+        font-size: 0.9rem;
+        color: rgb(255, 255, 255);
+        margin-bottom: 20px;
+    }
+    .contact .left span{
+        font-size: 1rem;
+    }
+    .profile .image
+    {
+        width: 80%;
+        height:80%;
+        margin-top: 20px;
+        padding: 0%;
+    }
+    .profile .text p{
+        font-size:1.8rem;
+        padding: 20px 0;
+    }
+    .profile span{
+        font-size: 1.8rem;
+    }
+    .profile .text h3{
+        font-size: 2rem;
+        color: rgb(66, 66, 66);
+    }
+
+    .projects .project .img{
+        aspect-ratio: 4/3;
+    }
+    
+    .projects .project .img img{
+        object-position: top;
+    }
+    .projects-sec{
+        padding: 20px;
+    }
+    .contact-sec h4{
+        width: 100%;
+    }
+    .contact-sec h4::after{
+        content: none;
+    }
+}
